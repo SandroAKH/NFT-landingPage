@@ -1,0 +1,76 @@
+@import "../../../styles/variables";
+
+#container {
+  position: relative;
+  height: 100%;
+
+  & > header,
+  & > #navigation {
+    z-index: 2;
+  }
+
+  & > footer {
+    z-index: 1;
+  }
+
+  & > main {
+    position: relative;
+    z-index: 1;
+
+    &::after,
+    &::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      height: 100vh;
+      width: 1px;
+      background-color: rgba(255, 255, 255, 0.5);
+
+      @include custom {
+        background-color: unset;
+      }
+    }
+
+    &::before {
+      left: 234px;
+    }
+
+    &::after {
+      right: #{350 + 48}px;
+    }
+  }
+}
+
+// .baner-booi {
+//   display: flex;
+//   justify-content: space-between;
+//   height: 100vh;
+//   width: 100vw;
+//   position: absolute;
+//   transition: 0.3s ease-in-out;
+//   transform: translateX(69%);
+
+//   z-index: 3;
+
+//   div {
+//     width: 100%;
+
+//     &:nth-child(3) {
+//       // border-left: 0.5px solid black;
+//       // z-index: 2;
+//       width: 71%;
+//       background: #61ff00;
+//     }
+//   }
+
+//   @include custom {
+//     display: none;
+//   }
+
+// }
+
+// .sectionBaner {
+//   transition: 0.3s ease-in-out;
+
+//   transform: translateX(0) !important;
+// }

@@ -1,0 +1,72 @@
+@import '../../../styles/variables';
+
+#navigation {
+  position: fixed;
+  bottom: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  right: 0;
+  font-family: 'Comfortaa';
+
+
+  @include lg {
+    width: 232px;
+  }
+
+  @include md_height {
+    bottom: 160px;
+    width: 232px;
+  }
+
+  @include md {
+    display: none;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 32px;
+    padding-left: 14px;
+    margin-bottom: 24px;
+    color: #cec7b8;
+    font-size: 16px;
+    letter-spacing: 0.305em;
+    transition: 0.3s all ease-in-out;
+
+    @include lg {
+      font-weight: 400;
+    }
+
+    @include md_height {
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &:hover,
+    &.active {
+      background-color: #61ff00;
+      color: #070707;
+    }
+
+  }
+}
+
+// .activeBanner {
+
+
+
+//   span {
+//     color: #070707 !important;
+
+//     &.active {
+//       background-color: #070707 !important;
+//       color: #61ff00 !important;
+//     }
+//   }
+// }

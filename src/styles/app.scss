@@ -1,0 +1,66 @@
+@import 'reset';
+@import 'fonts';
+@import '_variables.scss';
+
+* {
+  font-family: 'Comfortaa', cursive;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+
+  @include md {
+    overflow-x: hidden;
+  }
+
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #61ff00;
+  }
+}
+
+body {
+  cursor: url(../assets/cursor.png), default;
+  background-image: url(../assets/hompageBackground.png);
+  background-repeat: repeat;
+}
+
+hr {
+  position: absolute;
+  width: 270px;
+  height: 6px;
+  border: none;
+  background: #61ff00;
+}
+
+canvas {
+  display: block;
+  padding-top: none;
+
+  @include md {
+    padding-top: 108px;
+  }
+}
+
+.loading-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  background: black;
+}

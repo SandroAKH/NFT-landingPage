@@ -1,0 +1,106 @@
+@mixin xs {
+    @media (max-width: 440px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin minSm {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: 1040px) {
+        @content;
+    }
+}
+
+@mixin minMd {
+    @media (min-width: 1040px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (max-width: 1700px) {
+        @content;
+    }
+}
+
+/* height */
+
+@mixin md_height {
+    @media (max-height: 900px) {
+        @content;
+    }
+}
+
+@mixin costum_md_height {
+    @media (max-height: 1024px) {
+        @content;
+    }
+}
+
+@mixin custom_height {
+    @media (max-height: 1000px) {
+        @content;
+    }
+}
+
+@mixin custom_height_sm {
+    @media (max-height: 900px) {
+        @content;
+    }
+}
+
+/* custom */
+
+@mixin custom {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin custom_animation {
+    @media (max-width: 1700px) {
+        @content;
+    }
+}
+
+@mixin custom_animationV2 {
+    @media (max-width: 1300px) {
+        @content;
+    }
+}
+
+/* carousel */
+@mixin carousel_xl {
+    @media (min-width: 2000px) {
+        @content;
+    }
+}
+
+@mixin carousel_lg {
+    @media (max-width: 1500px) {
+        @content;
+    }
+}
+
+@mixin carousel_md {
+    @media (max-width: 1400px) {
+        @content;
+    }
+}

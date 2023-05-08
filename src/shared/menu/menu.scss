@@ -1,0 +1,140 @@
+@import '../../styles/variables';
+
+#page-wrap {
+  text-align: center;
+  overflow: auto;
+  top: 45%;
+  position: relative;
+  width: 100%;
+}
+.menu-wrapper {
+  .shareholders {
+    p {
+      transform-origin: bottom left;
+      transform: rotate(-90deg) translateY(100%);
+      width: 118px;
+      height: 47px;
+      line-height: 47px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      color: #000000;
+      padding-left: 8px;
+    }
+    img {
+      transform: rotate(90deg) translateY(-100%);
+    }
+  }
+}
+.sidebar {
+  border: 0.5px solid #000000;
+  margin: 0 48px 0 48px;
+  margin-top: -48px;
+  padding-top: 84px;
+  border-top: 0;
+  margin-bottom: -119px;
+  border-bottom: 0;
+  padding-bottom: 40px;
+  li {
+    text-align: center;
+    margin-bottom: 52px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 248px;
+    font-family: 'Teko';
+    font-size: 40px;
+    line-height: 130%;
+    outline: none;
+    color: #000000;
+    text-decoration: none;
+    &:last-child {
+      margin-bottom: 34px;
+    }
+  }
+  li.active {
+    font-weight: bold;
+    font-size: 44px;
+  }
+}
+.menu-socials {
+  transform-origin: bottom right;
+  right: 13px;
+  bottom: 30px;
+  position: relative;
+  transform: rotate(-90deg) translateX(100%);
+
+  button {
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    height: 24px;
+    padding: 6px 8px;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.225em;
+    color: #000000;
+    margin-right: 15px;
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+  }
+}
+.burgerMenu {
+  width: 100% !important;
+}
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: black;
+  transition: color 0.2s;
+}
+.bm-item:hover {
+  color: white;
+}
+.bm-burger-button {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  right: 28px;
+  top: 48px;
+
+  @include md {
+    top: 30px;
+  }
+}
+.menu-logo {
+  width: 44px;
+  margin: 0 !important;
+  height: 51.57px;
+  padding: 32px 0 23px 28px;
+  border: none !important;
+}
+.bm-cross-button {
+  height: 48px !important;
+  width: 48px !important;
+  top: 33px !important;
+  right: 25px !important;
+}
+.bm-menu {
+  background: #61ff00;
+}
+.bm-item-list {
+  color: black;
+  .bm-item {
+    display: block;
+    border: 0.5px solid #000000;
+    margin-top: 80px;
+    border-left: 0;
+    border-right: 0;
+  }
+}
+.bm-icon {
+  width: 41px !important;
+  height: 20.91px !important;
+}

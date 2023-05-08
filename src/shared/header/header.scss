@@ -1,0 +1,90 @@
+@import '../../styles/variables';
+
+#header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  max-height: 291px;
+  padding: 87px 56px 0 91px;
+
+  @include md {
+    flex-direction: column;
+    padding: 0;
+    display: flex;
+    max-height: 291px;
+    margin-left: 0;
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .menu-wrapper {
+    @include minMd {
+      display: none;
+    }
+  }
+
+  .menu {
+    display: flex;
+
+    @include md {
+      height: 80px;
+      width: 100%;
+      justify-content: space-between;
+      background: #000000;
+    }
+
+    .logo {
+      display: flex;
+      margin-right: 134px;
+
+      img {
+        width: 50px;
+        height: 57.35px;
+
+        @include md {
+          margin: 13px 93px 13px 28px;
+        }
+      }
+    }
+  }
+
+  .social-wrap {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 145px - 87px;
+    padding-bottom: 50px;
+    // margin-right: 62px;
+
+    @include md {
+      display: none !important;
+    }
+
+    a {
+      font-weight: 400;
+      font-size: 12px;
+      color: #cec7b8;
+      letter-spacing: 0.225em;
+      margin-right: 32px;
+      font-family: 'Comfortaa';
+      text-decoration: none;
+
+      &:hover {
+        color: #61ff00;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &.meta {
+    .social-wrap {
+      a {
+        color: #61ff00;
+      }
+    }
+  }
+}
